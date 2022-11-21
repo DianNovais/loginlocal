@@ -1,0 +1,44 @@
+:root{
+  --background-color: linear-gradient(180deg, #170c32, #202146);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+.error_Container{
+  background-color: rgb(247, 185, 185);
+  padding: 10px;
+  color: rgb(250, 92, 92) !important;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.btn_login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #170c32 !important;
+  border: 1px solid #202146;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #170c3200 !important;
+}
+
+.btn_login:hover{
+  color: #fff !important;
+  background-color: #202146 !important;
+}
+
+
