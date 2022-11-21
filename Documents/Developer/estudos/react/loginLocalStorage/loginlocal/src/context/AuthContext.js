@@ -22,8 +22,8 @@ export const AuthProvider = ({children}) => {
 
 
     const singin = (email, password) => {
-        if(!email && !password){
-            return "Por favor não deixe os campos em branco";
+        if(email.length < 1 || password.length < 1){
+            return "não deixe espaços em branco"
         }
 
         const usersStorage = JSON.parse(localStorage.getItem("users_bd"));
@@ -45,9 +45,10 @@ export const AuthProvider = ({children}) => {
     };
 
     const singup = (email, password) => {
-        if(!email && !password){
-            return "Por favor não deixe os campos em branco";
+        if(email.length < 1 || password.length < 1){
+            return "não deixe espaços em branco"
         }
+    
 
         const usersStorage = JSON.parse(localStorage.getItem("users_bd"))
         const hasUser = usersStorage?.filter((user) => user.email === email);

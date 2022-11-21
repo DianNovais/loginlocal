@@ -28,7 +28,7 @@ const Singup = () => {
 
     if(res){
         setError(res);
-        return;
+        return
     }
 
     singin(email, password);
@@ -57,7 +57,7 @@ const Singup = () => {
           onChange={(e) => setConfirmPassword(e.target.value)}
           value={confirmPassword}
         />
-        <input type="submit" className="btn_login" value="Entrar"/>
+        <input type="submit" className="btn_login" value="Registrar"/>
         <Link to="/login" ><p>Logar</p></Link>
         {error && (
             <p className="error_Container">{error}</p>
